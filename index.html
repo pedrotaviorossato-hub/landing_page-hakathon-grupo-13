@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FATech: aplicativo para registrar, organizar e visualizar vistorias ambientais em campo, com exportação para o QGIS.">
+    <title>FATech — Fiscalização Ambiental com Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="arquivo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span>FA</span> Tech
+            </a>
+
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#solucao">Solução</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#telas">Telas</a>
+                <a href="#projeto">Projeto</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+<main>
+
+    <section class="hero" id="sobre">
+        <div class="container hero-grid">
+
+            <div class="hero-copy">
+
+                <h1 class="rise">Da vistoria em campo <span class="alt">ao mapa utilizável.</span></h1>
+
+                <p class="lead rise">
+                    A FATech organiza os registros de fiscalização ambiental:
+                    localização, fotos, relatos e áudios ficam ligados à mesma
+                    ocorrência e chegam ao QGIS prontos para análise.
+                </p>
+
+                <div class="actions rise">
+                    <a href="#solucao" class="button primary">Conhecer a solução</a>
+                    <a href="#telas" class="button ghost">Ver as telas</a>
+                </div>
+
+                <dl class="facts rise">
+                    <div><dt>GPS</dt><dd>Localização de cada ocorrência</dd></div>
+                    <div><dt>SQLite</dt><dd>Dados salvos no dispositivo</dd></div>
+                    <div><dt>KML</dt><dd>Exportação para o QGIS</dd></div>
+                </dl>
+            </div>
+
+            <figure class="hero-shot rise">
+                <img src="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf.png" alt="Mapa da FATech com as ocorrências de uma visita">
+                <figcaption>Mapa da visita com 4 pontos registrados</figcaption>
+                <div class="chip"><i></i>Registrando em campo</div>
+            </figure>
+
+        </div>
+    </section>
+
+
+    <section class="section about">
+        <div class="container split">
+            <h2>O trabalho de fiscalização começa no campo, mas não termina nele.</h2>
+            <div class="prose">
+                <p>
+                    Numa vistoria, o fiscal reúne coordenadas, fotografias, relatos e áudios.
+                    Quando esse material fica espalhado entre anotações e arquivos soltos,
+                    a informação perde valor na hora de revisar e analisar.
+                </p>
+                <p>
+                    A FATech faz a ponte: <strong>registrar no campo, revisar com segurança
+                    e ver o resultado no mapa.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section solution" id="solucao">
+        <div class="container split">
+
+            <div>
+                <h2>Um fluxo pensado para a fiscalização ambiental.</h2>
+                <p class="sub">
+                    O aplicativo reúne as etapas da vistoria e reduz a distância entre
+                    o que é coletado no campo e o que será analisado depois.
+                </p>
+
+                <ul class="checks">
+                    <li>Registra visitas e várias ocorrências por visita.</li>
+                    <li>Guarda os dados no aparelho, para uso sem internet.</li>
+                    <li>Vincula localização, fotos, texto e áudio.</li>
+                    <li>Pede revisão humana antes de finalizar.</li>
+                    <li>Mostra as ocorrências no mapa e exporta KML para o QGIS.</li>
+                </ul>
+            </div>
+
+            <div class="visit draw" aria-label="Exemplo de visita no aplicativo">
+                <div class="visit-top">
+                    <span>Visita</span>
+                    <span class="pill">Em campo</span>
+                </div>
+                <h3>Margem do reservatório</h3>
+                <p>4 ocorrências registradas</p>
+                <ol>
+                    <li><b>1</b><div><strong>Acúmulo de sedimentos</strong><small>Coordenada registrada</small></div></li>
+                    <li><b>2</b><div><strong>Vegetação limita a visibilidade</strong><small>Registro em rascunho</small></div></li>
+                    <li><b>3</b><div><strong>Ponto de observação</strong><small>Dados vinculados</small></div></li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section features">
+        <div class="container">
+            <h2>Tudo da vistoria, num só lugar</h2>
+            <p class="sub">Recursos que acompanham o registro da coleta até a visualização.</p>
+
+            <div class="feature-grid draw">
+                <article><h3>GPS e localização</h3><p>Coordenadas, precisão e horário para contextualizar cada ocorrência.</p></article>
+                <article><h3>Evidências</h3><p>Fotos, relatos escritos e áudios associados ao registro correto.</p></article>
+                <article><h3>Funciona offline</h3><p>Os registros ficam no dispositivo mesmo sem conexão.</p></article>
+                <article><h3>Revisão humana</h3><p>O material é conferido antes de a ocorrência ser finalizada.</p></article>
+                <article><h3>Mapa interativo</h3><p>Veja os pontos, abra cada registro e gere o contorno da área.</p></article>
+                <article><h3>Exportação KML</h3><p>Arquivo KML 2.2 com os atributos das ocorrências, para o QGIS.</p></article>
+                <article><h3>Assistência por IA</h3><p>Quando configurada, ajuda na transcrição e em sugestões durante a revisão.</p></article>
+                <article><h3>Modo demonstração</h3><p>Dados fictícios apresentam o fluxo sem se misturar com dados reais.</p></article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section flow">
+        <div class="container">
+            <h2>Do registro em campo ao mapa</h2>
+            <ol class="steps draw">
+                <li><h3>Coleta</h3><p>Crie a visita e registre as ocorrências no local.</p></li>
+                <li><h3>Dados e evidências</h3><p>Adicione localização, fotos, relato e áudio.</p></li>
+                <li><h3>Revisão</h3><p>Confira os dados e finalize o registro.</p></li>
+                <li><h3>Mapa e KML</h3><p>Visualize os pontos e leve os dados para o QGIS.</p></li>
+            </ol>
+        </div>
+    </section>
+
+
+    <section class="section shots" id="telas">
+        <div class="container">
+            <h2>As telas, na prática</h2>
+            <p class="sub">Visitas, ocorrências, registros, localização e mapa. Toque em uma imagem para ampliar.</p>
+
+            <div class="gallery">
+                <button class="gallery-item large" data-image="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (1).png" data-title="Lista de ocorrências">
+                    <img src="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (1).png" alt="Tela de visita com lista de ocorrências" loading="lazy">
+                    <span>Visita e ocorrências</span>
+                </button>
+                <button class="gallery-item" data-image="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (3).png" data-title="Registro de ocorrência">
+                    <img src="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (3).png" alt="Tela de registro da ocorrência" loading="lazy">
+                    <span>Registro</span>
+                </button>
+                <button class="gallery-item" data-image="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf.png" data-title="Mapa da visita">
+                    <img src="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf.png" alt="Mapa com os pontos da visita" loading="lazy">
+                    <span>Mapa</span>
+                </button>
+                <button class="gallery-item" data-image="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (4).png" data-title="Ocorrência no mapa">
+                    <img src="imagens/FAtech_Pitch_Hackathon_atualizado_v4.pdf (4).png" alt="Detalhes de uma ocorrência no mapa" loading="lazy">
+                    <span>Detalhes no mapa</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section tech" id="recursos">
+        <div class="container split">
+
+            <div>
+                <h2>Um MVP com arquitetura preparada para evoluir.</h2>
+                <p class="sub">
+                    O app é feito em Flutter/Dart. Os dados ficam em SQLite e arquivos privados;
+                    o backend em Python com FastAPI cuida do que depende do servidor.
+                </p>
+                <ul class="tags">
+                    <li>Flutter</li><li>Dart</li><li>Python</li><li>FastAPI</li>
+                    <li>SQLite</li><li>GeoPandas</li><li>Shapely</li><li>QGIS</li>
+                </ul>
+            </div>
+
+            <dl class="stack draw">
+                <div><dt>App</dt><dd>Flutter / Dart</dd></div>
+                <div><dt>Dados</dt><dd>SQLite + arquivos privados</dd></div>
+                <div><dt>Backend</dt><dd>Python + FastAPI</dd></div>
+                <div><dt>Mapa</dt><dd>Coordenadas + KML</dd></div>
+                <div><dt>GIS</dt><dd>QGIS</dd></div>
+            </dl>
+
+        </div>
+    </section>
+
+
+    <section class="section project" id="projeto">
+        <div class="container split">
+
+            <div>
+                <h2>Uma proposta de fluxo para a fiscalização, não só um aplicativo.</h2>
+                <div class="prose">
+                    <p>
+                        A FATech mostra como tecnologia móvel, geolocalização, armazenamento local,
+                        IA assistiva e GIS podem trabalhar juntos numa vistoria ambiental.
+                    </p>
+                    <p>
+                        O objetivo não é substituir a análise técnica, e sim <strong>organizar a
+                        informação para que o profissional possa revisar, interpretar e usar
+                        os dados coletados.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <h3>Próximos passos</h3>
+                <ol>
+                    <li><strong>Sincronização online</strong><small>Enviar os dados a uma base central quando houver conexão.</small></li>
+                    <li><strong>Histórico das ocorrências</strong><small>Acompanhar registros anteriores de um mesmo local.</small></li>
+                    <li><strong>Alertas e prioridades</strong><small>Destacar as ocorrências que pedem atenção.</small></li>
+                    <li><strong>Relatórios automatizados</strong><small>Transformar registros revisados em relatórios mais rápido.</small></li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cta-wrap">
+        <div class="container cta">
+            <div>
+                <h2>Fiscalização ambiental mais organizada, do campo ao mapa.</h2>
+                <p>Registros de campo transformados em informação espacial utilizável.</p>
+            </div>
+            <a href="#telas" class="button light">Ver as telas</a>
+        </div>
+    </section>
+
+
+<section class="section contact" id="contato">
+    <div class="container split">
+        <div>
+            <span class="contact-label">FALE CONOSCO</span>
+            <h2>Quer saber mais sobre a FATech?</h2>
+            <p class="sub">
+                Entre em contato para conhecer melhor o projeto, tirar dúvidas
+                ou conversar sobre possíveis aplicações da solução.
+            </p>
+
+            <div class="contact-info">
+                <div>
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>fatech.projeto@gmail.com</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Projeto</strong>
+                        <p>FATech — Fiscalização Ambiental com Tecnologia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
+
+            <button type="submit" class="button primary">Enviar mensagem</button>
+            <p class="form-status" id="formStatus"></p>
+        </form>
+    </div>
+</section>
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <a href="#" class="logo">
+                <span>FA</span> Tech
+            </a>
+            <p>Fiscalização Ambiental com Tecnologia</p>
+        </div>
+        <p>FAtech - Fiscalização Ambiental · © 2026 FATech</p>
+    </div>
+</footer>
+
+
+<div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Fechar imagem">×</button>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+        <p id="modalTitle"></p>
+    </div>
+</div>
+
+<script src="arquivo.js"></script>
+</body>
+</html>
